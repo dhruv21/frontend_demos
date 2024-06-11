@@ -1,0 +1,35 @@
+.services-introduction-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.services-introduction-item{
+  text-align: center;
+}
+
+.services-introduction-item img {
+  width: 95%;
+  border-radius: 8px;
+  transform: scale(0.5);
+  animation: fadeInScale 1s ease forwards;
+}
+
+.services-introduction-item img.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Tablet breakpoint */
+@media screen and (min-width: 600px) {
+  .services-introduction-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+/* Mobile breakpoint */
+@media screen and (min-width: 900px) {
+  .services-introduction-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
